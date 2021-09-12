@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
+
+@media only screen and (min-width: 600px) {
+  .nav-link {
+    display: inline-block !important;
+  }
+  .nav {
+    padding-right: 1rem !important;
+  }
+
+  .nav-link {
+    text-transform: uppercase !important;
+  }
+
+  .navbar-brand {
+    font-family: "Architects Daughter", cursive;
+    font-size: 20px !important;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .nav-link {
+    display: inline-block !important;
+  }
+  .nav {
+    padding-right: 1rem !important;
+  }
+
+  .nav-link {
+    text-transform: uppercase !important;
+  }
+
+  .navbar-brand {
+    font-family: "Architects Daughter", cursive;
+    font-size: 30px !important;
+  }
+}
+
+.navbar {
+  padding: 25px 25px;
+}
+
+.navbar-brand {
+  margin-left: 5rem;
+  font-family: "Architects Daughter", cursive;
+  font-size: 40px;
+}
+
+.nav-link {
+  font-size: 20px;
+  text-transform: uppercase;
+  transition: all 0.2s ease-in;
+}
+
+.nav-link:hover {
+  border-bottom: 5px solid #1479ff;
+}
+
+.active {
+  border-bottom: 5px solid #1479ff;
+  content: " ";
+  left: 0;
+  position: relative;
+  right: 0;
+}
+
+.main-container {
+  background-color: rgba(94, 129, 172, 0.2);
+  padding: 10rem;
+}
+
+.typed-container {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+}
+
+.typed-text {
+  font-size: 40px;
+  color: #1479ff;
+}
+
+.small-text {
+  font-size: 35px;
+  color: #1479ff;
+}
+
+.social-container {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.social-btn {
+  padding: 1rem;
+  width: 5rem;
+  border-radius: 24px;
+  margin-left: 15px;
+  border: none;
+  transition: all 0.1s ease-in-out;
+  outline: none;
+  font-size: 26px;
+}
+
+.social-btn:hover {
+  background-color: transparent;
+  border-bottom: 5px solid #1479ff;
+}
+
+.pic {
+  border-radius: 24px;
+  width: 600px;
+  height: 350px;
+  box-shadow: 7px 9px 4px rgba(0, 0, 0, 0.25);
+}
+
+.about-me-container {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.about-me-title {
+  color: #1479ff;
+}
+
+.projects-container {
+  background-color: #1479ff;
+  color: white;
+  padding: 5rem;
+}
+
+.tech-stack-list {
+  margin-top: 0.5rem;
+  list-style: square;
+}
+
+.tech-stack-list > li {
+  padding: 0.5rem;
+  margin-left: 6rem;
+  margin-top: 1rem;
+  font-size: 26px;
+}
+
+.repo-card {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 24px;
+  box-shadow: 7px 9px 4px rgba(0, 0, 0, 0.25);
+  margin-top: 2rem;
+}
+
+.card-title {
+  color: #1479ff;
+}
+
+.card-description {
+  color: rgb(94, 129, 172);
+}
+
+.card-btn-container {
+  display: flex;
+  justify-content: center;
+}
+
+.card-btn {
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-radius: 24px;
+  border: none;
+  transition: all 0.1s ease-in-out;
+}
+.card-btn > a {
+  text-decoration: none;
+}
+
+.card-btn:hover {
+  color: #1479ff;
+  background-color: transparent;
+  border-bottom: 5px solid #1479ff;
+}
+
+.contact-container {
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-header {
+  color: #1479ff;
+}
+
+.social-btn-big {
+  padding: 1rem;
+  width: 15rem;
+  border-radius: 24px;
+  margin-left: 15px;
+  border: none;
+  transition: all 0.1s ease-in-out;
+  outline: none;
+  font-size: 26px;
+}
+
+.social-btn-big:hover {
+  background-color: transparent;
+  border-bottom: 5px solid #1479ff;
+}
