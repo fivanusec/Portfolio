@@ -131,7 +131,7 @@ const App = () => {
               <h1>My work</h1>
             </Col>
           </Row>
-          <Row>
+          <Row className="repo-card-container">
             {data.map((d) => (
               <>
                 <Col style={{ marginTop: "1rem" }}>
@@ -139,6 +139,18 @@ const App = () => {
                 </Col>
               </>
             ))}
+            {data.length % 2 === 0 ? (
+              <>
+                <Col>
+                  <RepoCard
+                    data={{
+                      name: "To be added",
+                      description: "This will be some cool project",
+                    }}
+                  />
+                </Col>
+              </>
+            ) : null}
           </Row>
         </Container>
       </Container>
@@ -147,7 +159,7 @@ const App = () => {
           <h1 className="contact-header">Contact me</h1>
           <p>
             If you want to contact me and hit me with some ideas you can contact
-            me here!
+            me here! Or send me an email directly to: fivanusec@gmail.com
           </p>
         </Container>
         <Container className="contact-button">
