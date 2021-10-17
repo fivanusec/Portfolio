@@ -68,6 +68,9 @@ class Navigation extends React.Component {
               <Nav.Link style={this.state.style} href="#projects">
                 Projects
               </Nav.Link>
+              <Nav.Link style={this.state.style} href="#photography">
+                Photography
+              </Nav.Link>
               <Nav.Link style={this.state.style} href="#contact">
                 Contact
               </Nav.Link>

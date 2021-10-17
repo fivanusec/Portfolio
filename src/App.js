@@ -6,18 +6,27 @@ import {
   faTwitter,
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
-import { Container, Button, Row, Col } from "react-bootstrap";
+import { Container, Button, Row, Col, Carousel } from "react-bootstrap";
 import Navigation from "./components/Navbar";
 import img from "./img/Masnoca.jpg";
 import img2 from "./img/Druga.jpg";
 import { fetchApi } from "./helper/fetchData";
 import RepoCard from "./components/RepoCard";
 
+const importAllImages = (r) => {
+  return r.keys().map(r);
+};
+
 const App = () => {
   const [data, setData] = useState([]);
   useEffect(() => {
     fetchApi().then(setData);
   }, []);
+
+  const images = importAllImages(
+    require.context("./img", false, /\.(png|jpe?g|svg)$/)
+  );
+
   return (
     <>
       <Navigation />
@@ -154,6 +163,21 @@ const App = () => {
           </Row>
         </Container>
       </Container>
+      <Carousel id="photography">
+        {images.map((img) => (
+          <Carousel.Item>
+            <img
+              style={{ width: "120rem", height: "50rem" }}
+              src={img.default}
+              alt="My photography work"
+            />
+          </Carousel.Item>
+        ))}
+        <Carousel.Caption>
+          <h3>My photography work</h3>
+          <p>This is some of my photography work that I done over the years.</p>
+        </Carousel.Caption>
+      </Carousel>
       <Container fluid className="contact-container" id="contact">
         <Container className="contact-text">
           <h1 className="contact-header">Contact me</h1>

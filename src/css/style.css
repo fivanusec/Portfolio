@@ -227,3 +227,7 @@
   background-color: transparent;
   border-bottom: 5px solid #1479ff;
 }
+
+.container-carousel {
+  margin-bottom: 2rem;
+}
